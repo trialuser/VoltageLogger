@@ -64,7 +64,8 @@ std::ofstream vmdelet_out;
     		vmdelet_out.open( name_file, std::ios::app);
     		vmdelet_out << var.getValue()[0]<< " " << t_m->tm_hour<< t_m->tm_min<< setw(2) <<  setfill('0') << t_m->tm_sec <<endl;
     		vmdelet_out.close();
-    		cout << var.getValue()[0]<< " " << t_m->tm_hour<<":"<< t_m->tm_min<<":"<< setw(2) <<  setfill('0') << t_m->tm_sec << endl;
+    		cout << var.getValue()[0]<< " " << t_m->tm_hour<<":"<< setw(2) <<  setfill('0') <<
+    				                   t_m->tm_min<<":"<< setw(2) <<  setfill('0') << t_m->tm_sec << endl;
     	}
     }
 
